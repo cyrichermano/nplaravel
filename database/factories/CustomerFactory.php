@@ -14,7 +14,8 @@ class CustomerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'  => $this->faker->name(),
+            'debth' => $this->faker->numberBetween(100,1000000),
         ];
     }
 }
